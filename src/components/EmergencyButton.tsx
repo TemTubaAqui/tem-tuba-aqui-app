@@ -15,7 +15,7 @@ export function EmergencyButton() {
                 position: 'absolute',
                 bottom: 95,
                 right: 13,
-                backgroundColor: 'red',
+                backgroundColor: '#FF3131',
                 justifyContent: 'center',
                 alignItems: 'center'
             }}
