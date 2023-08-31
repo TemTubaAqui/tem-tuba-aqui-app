@@ -2,15 +2,12 @@ import React from "react";
 import { Image } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-//import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Home from "../screens/Home";
 import Tta from "../screens/Tta";
 import Curiosidades from "../screens/Curiosidades";
-import InfoPraia from "../screens/InfoPraia";
 
 const { Navigator, Screen } = createBottomTabNavigator();
-//const { Navigator2, Screen2 } = createNativeStackNavigator();
 
 export function AppRoutes() {
   return (
