@@ -1,75 +1,18 @@
-import React from "react";
-import { Image } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import React from 'react'
+import {NavigationContainer} from '@react-navigation/native'
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { TabBar } from '../components/TabBar';
+import InfoPraia from '../screens/InfoPraia';
 
-import Home from "../screens/Home";
-import Tta from "../screens/Tta";
-import Curiosidades from "../screens/Curiosidades";
-
-const { Navigator, Screen } = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
 export function AppRoutes() {
-  return (
-    <NavigationContainer>
-      <Navigator
-        screenOptions={({ route }) => ({
-          headerShown: false,
-          tabBarStyle: {
-            height: 70,
-            backgroundColor: "#9CC5FF",
-          },
-          tabBarLabelStyle: {
-            fontSize: 17,
-            color: "#FFFFFF",
-            fontWeight: "900",
-          },
-          tabBarActiveBackgroundColor: "#6DAAFF",
-        })}
-      >
-        <Screen
-          name="Home"
-          component={Home}
-          options={{
-            tabBarIcon: () => {
-              return (
-                <Image
-                  source={require("../assets/house.png")}
-                  alt="ícone da Home"
-                />
-              );
-            },
-          }}
-        />
-        <Screen
-          name="Tta"
-          component={Tta}
-          options={{
-            tabBarIcon: () => {
-              return (
-                <Image
-                  source={require("../assets/TTA.png")}
-                  alt="ícone da Home"
-                />
-              );
-            },
-          }}
-        />
-        <Screen
-          name="Curiosidades"
-          component={Curiosidades}
-          options={{
-            tabBarIcon: () => {
-              return (
-                <Image
-                  source={require("../assets/menu_book.png")}
-                  alt="ícone da Home"
-                />
-              );
-            },
-          }}
-        />
-      </Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen options={{headerShown: false}} name="TabBar" component={TabBar} />
+                <Stack.Screen options={{headerShown: false}} name="InfoPraia" component={InfoPraia} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
