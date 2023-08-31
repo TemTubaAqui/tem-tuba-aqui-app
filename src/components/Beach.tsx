@@ -1,25 +1,35 @@
 
-import { TouchableOpacity, Image, Text, TouchableOpacityProps } from 'react-native';
+import { TouchableOpacity, TouchableOpacityProps } from 'react-native';
+import { VStack, Pressable, Image, Text } from "native-base";
+import { useNavigation } from '@react-navigation/core';
+
 
 type Props = TouchableOpacityProps & {
     name: String;
 };
 
 export function Beach({ name, ...rest }: Props) {
-
+    const { navigate } = useNavigation<any>();
 
     return (
-        <TouchableOpacity style={{ backgroundColor: '#FFF', shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.25, shadowRadius: 4, borderBottomEndRadius: 30, borderBottomStartRadius: 20 }}>
-            <Image
-                style={{ resizeMode: 'contain' }}
-                source={require('../assets/Beachicon.png')}
-                alt='foto da praia'
-            />
-            <Text style={{
-                marginLeft: 8, color: '#192448',
-                fontSize: 16
-            }}>{name}</Text>
-        </TouchableOpacity >
+        <Pressable onPress={() => navigate("Curiosidades")}> 
+        <VStack
+          borderColor="gray.200"
+          borderWidth={3}
+          borderRadius={8}
+          p={4}
+          mx={5}
+          justifyContent="center"
+          alignItems="center"
+        >
+         
+          <Image  source={require('../assets/Beachicon.png')} alt="Dúvida" m="auto"/>
+          <Text fontWeight="bold" fontSize={16}>
+          {name}
+          </Text>
+        </VStack>
+      </Pressable>
+
     );
 
 }

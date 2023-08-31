@@ -11,13 +11,14 @@ export default function Tta() {
         backgroundColor: "#EDEDED", marginTop: 33, marginBottom: 18
       }}>
         <Image source={require('../assets/Search.png')}
-          alt='botão que possue uma imagem de um telefone e SOS' style={{ width: 24, height: 24 }} />
+          alt='botão de emergência' style={{ width: 24, height: 24 }} />
         <TextInput placeholder='Qual praia que você deseja informação?' placeholderTextColor={'#000'} />
       </View>
 
       <ScrollView >
+        
         <Beach name={'Porto de galinhas'} />
-
+        <Beach name={'Porto de galinhas'} />
       </ScrollView>
     </View>
   );
