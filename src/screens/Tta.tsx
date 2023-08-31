@@ -5,7 +5,7 @@ import { Beach } from '../components/Beach';
 export default function Tta() {
   return (
     <View style={{ flex: 1, alignItems: 'center', marginTop: 9 }}>
-      <Text>Tem tuba aqui?</Text>
+      <Text style={{marginTop: 25, color: "#00689d", fontWeight: '500', fontSize: 22, margin: 3, textAlign: 'center'}}>Tem tuba aqui?</Text>
       <View style={{
         flexDirection: 'row', gap: 12, paddingHorizontal: 23, paddingVertical: 8, borderRadius: 20,
         backgroundColor: "#EDEDED", marginTop: 33, marginBottom: 18
