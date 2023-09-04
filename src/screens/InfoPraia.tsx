@@ -6,32 +6,35 @@ import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/core";
 import praia from "../assets/praia.jpeg";
 import { format } from "date-fns";
+import { infoBeach } from "../types/interfaces";
+import { useRoute } from "@react-navigation/native";
 
-const mockData = {
-  id: 33,
-  attack_count: 4,
-  last_attack: "2015-03-31",
-  city: "Olinda",
-  state: "PE",
-  country: "BR",
-  name: "Del Chifre",
-  latitude: 0.0,
-  longitude: 0.0,
-};
+type paramsProps = {
+  beachId: string;
+}
 
 export default function InfoPraia() {
-  const { navigate } = useNavigation<any>();
-  //const [beachData, setBeachData] = useState(null);
 
-  // useEffect(() => {
-  //   BeachService.getBeachById(beachId)
-  //     .then((response) => {
-  //       setBeachData(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching beach data:", error);
-  //     });
-  // }, [beachId]);
+  const route = useRoute();
+  const {beachId} = route.params as paramsProps;
+  const { navigate } = useNavigation<any>();
+  const [beachData, setBeachData] = useState<infoBeach>({
+    name: "",
+    city: "",
+    attack_count: "",
+    last_attack: "",
+    state: "",
+  });
+
+  useEffect(() => {
+    BeachService.getBeachById(beachId)
+      .then((response) => {
+        setBeachData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching beach data:", error);
+      });
+  }, [beachId]);
 
   return (
     <Box w="100%" flex={1} bg={"background"}>
@@ -64,62 +67,64 @@ export default function InfoPraia() {
           borderTopRightRadius={15}
         />
 
-        <ScrollView>
-          <VStack width="100%" alignItems={"center"}>
-            <Text
-              marginTop={8}
-              fontSize={22}
-              fontWeight={500}
-              color={"#00689d"}
-            >
-              Informações da Praia
-            </Text>
-          </VStack>
-          <VStack mx={5}>
-            <Text
-              fontWeight="bold"
-              marginTop={5}
-              fontSize={16}
-              marginBottom={1}
-            >
-              Nome da Praia:
-            </Text>
-            <Text fontSize={16}>{mockData.name}</Text>
-            <Text
-              fontWeight="bold"
-              marginTop={4}
-              fontSize={16}
-              marginBottom={1}
-            >
-              Cidade/Estado:
-            </Text>
-            <Text fontSize={16}>
-              {mockData.city}/ {mockData.state}
-            </Text>
-            <Text
-              fontWeight="bold"
-              marginTop={4}
-              fontSize={16}
-              marginBottom={1}
-            >
-              Quantidade de Ataques que está praia possui:
-            </Text>
-            <Text fontSize={16}>{mockData.attack_count} </Text>
-            <Text
-              fontWeight="bold"
-              marginTop={4}
-              fontSize={16}
-              marginBottom={1}
-            >
-              Último Registro de Ataque:
-            </Text>
-            <Text fontSize={16}>
-              {mockData.last_attack !== "null"
-                ? format(new Date(mockData.last_attack), "dd/MM/yyyy")
-                : "N/A"}
-            </Text>
-          </VStack>
-        </ScrollView>
+        {beachData && (
+          <ScrollView>
+            <VStack width="100%" alignItems={"center"}>
+              <Text
+                marginTop={8}
+                fontSize={22}
+                fontWeight={500}
+                color={"#00689d"}
+              >
+                Informações da Praia
+              </Text>
+            </VStack>
+            <VStack mx={5}>
+              <Text
+                fontWeight="bold"
+                marginTop={5}
+                fontSize={16}
+                marginBottom={1}
+              >
+                Nome da Praia:
+              </Text>
+              <Text fontSize={16}>{beachData.name}</Text>
+              <Text
+                fontWeight="bold"
+                marginTop={4}
+                fontSize={16}
+                marginBottom={1}
+              >
+                Cidade/Estado:
+              </Text>
+              <Text fontSize={16}>
+                {beachData.city} / {beachData.state}
+              </Text>
+              <Text
+                fontWeight="bold"
+                marginTop={4}
+                fontSize={16}
+                marginBottom={1}
+              >
+                Quantidade de Ataques que está praia possui:
+              </Text>
+              <Text fontSize={16}>{beachData.attack_count} </Text>
+              <Text
+                fontWeight="bold"
+                marginTop={4}
+                fontSize={16}
+                marginBottom={1}
+              >
+                Último Registro de Ataque:
+              </Text>
+              <Text fontSize={16}>
+                {beachData.last_attack
+                  ? format(new Date(beachData.last_attack), "dd/MM/yyyy")
+                  : "N/A"}
+              </Text>
+            </VStack>
+          </ScrollView>
+        )}
       </VStack>
     </Box>
   );
