@@ -9,7 +9,7 @@ export default function Curiosidades() {
       <Box width="100%" flex={1} bg={"background"}>
         <Text style={{marginTop: 25, color: "#00689d", fontWeight: '500', fontSize: 22, margin: 3, textAlign: 'center'}}>Curiosidades</Text>
         <ScrollView>
-        <Link m="auto" href="https://drive.google.com/file/d/1AVNNpJgXqkg4IGjtg3DuwKHHRSG0qj-V/view?usp=sharing">
+        <Link m="auto" href="https://drive.google.com/file/d/1TF3ksMDTEv1sxzz7sgiC53bGrllMpW2F/view?usp=drivesdk">
           <VStack
             backgroundColor={"card"}
             borderRadius={15}
@@ -31,7 +31,7 @@ export default function Curiosidades() {
             </Text>
           </VStack>
         </Link>
-        <Link m="auto" href="https://drive.google.com/file/d/1ANm8Wq5zTNPVVhw3G649DxeLlV3cEXyq/view?usp=sharing">
+        <Link m="auto" href="https://drive.google.com/file/d/16hKvrlSjcidcQbTrM8kt80BNwMDhSYa2/view?usp=drivesdk">
           <VStack
             backgroundColor={"card"}
             borderRadius={15}
@@ -53,7 +53,7 @@ export default function Curiosidades() {
             </Text>
           </VStack>
         </Link>
-        <Link m="auto" href="https://drive.google.com/file/d/1ARMztEZsAXSyYjrPTdPdMpN6p1vgqgJ7/view?usp=sharing"> 
+        <Link m="auto" href="https://drive.google.com/file/d/1DVTYebD_SyE_F_wZ6R50cOFSh7dc9SW8/view?usp=drivesdk"> 
           <VStack
             backgroundColor={"card"}
             borderRadius={15}
@@ -75,7 +75,7 @@ export default function Curiosidades() {
             </Text>
           </VStack>
         </Link>
-        <Link m="auto" href="https://drive.google.com/file/d/1AT5Z5qzbI89C7oke5BsCnIOrpIND6PA8/view?usp=sharing"> 
+        <Link m="auto" href="https://drive.google.com/file/d/1nUo13Flmyg0bcPxcoEkVSLU8p0hOtJdy/view?usp=drivesdk"> 
           <VStack
             backgroundColor={"card"}
             borderRadius={15}

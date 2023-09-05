@@ -43,7 +43,7 @@ export function TabBar() {
                         tabBarIcon: () => {
                             return <Image 
                                 source={require('../assets/TTA.png')} 
-                                alt='ícone da Home'
+                                alt='ícone da TTA'
                             />
                         }
                     }}
@@ -55,7 +55,7 @@ export function TabBar() {
                         tabBarIcon: () => {
                             return <Image 
                                 source={require('../assets/menu_book.png')} 
-                                alt='ícone da Home'
+                                alt='ícone de Curiosidades'
                             />
                         }
                     }}
