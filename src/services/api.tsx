@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default axios.create({
+export const api = axios.create({
   //baseURL: "http://localhost:8000/api/v1/",
   baseURL: "http://192.168.31.18:8000/api/v1/",
   headers: {

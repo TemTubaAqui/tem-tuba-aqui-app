@@ -37,7 +37,7 @@ export default function Home() {
             </Text>
           </VStack>
         </Pressable>
-        <Pressable onPress={() => navigate("InfoPraia", {beachId:"5"})}> 
+        <Pressable onPress={() => navigate("Curiosidades")}> 
           <VStack
             backgroundColor={"card"}
             borderRadius={15}
