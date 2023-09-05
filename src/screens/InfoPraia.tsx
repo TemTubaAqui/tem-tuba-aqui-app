@@ -4,7 +4,7 @@ import BeachService from "../services/beach";
 import { Box, HStack, ScrollView, VStack, Text, Image } from "native-base";
 import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/core";
-import praia from "../assets/Beachicon.png";
+import praia from "../assets/praia.jpeg";
 import { format } from "date-fns";
 import { infoBeach } from "../types/interfaces";
 import { useRoute } from "@react-navigation/native";

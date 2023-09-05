@@ -37,7 +37,7 @@ export default function Home() {
             </Text>
           </VStack>
         </Pressable>
-        <Pressable onPress={() => navigate("Teste")}> 
+        <Pressable onPress={() => navigate("Curiosidades")}> 
           <VStack
             backgroundColor={"card"}
             borderRadius={15}
