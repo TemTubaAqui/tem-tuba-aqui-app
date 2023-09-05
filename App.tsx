@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { NativeBaseProvider, extendTheme } from "native-base";
+import { EmergencyButton } from './src/components/EmergencyButton';
+import Header from "./src/components/Header";
+import BarStatus from "./src/components/BarStatus";
+import { AppRoutes } from "./src/routes/app.routes";
+
+const theme = extendTheme({
+  colors: {
+    primary: "#3589FF", 
+    background: "#FFFEED", // "#FFFFFF"
+    card: "#FFFFFF"
+  },
+});
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider theme={theme}>
+      <BarStatus />
+      <Header />
+      <AppRoutes />
+      <EmergencyButton />
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
