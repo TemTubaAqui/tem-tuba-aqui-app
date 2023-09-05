@@ -1,9 +1,9 @@
 import { Text, View } from 'react-native';
 
-export default function Tta() {
+export default function Teste() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Tta!</Text>
+        <Text>teste!</Text>
       </View>
     );
   }
