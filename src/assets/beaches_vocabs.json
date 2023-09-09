@@ -1,0 +1,349 @@
+{
+    "locais": [
+        {
+            "nome": "Carne de Vaca",
+            "latitude": -7.630225421785896,
+            "longitude": -34.80976182166318
+        },
+        {
+            "nome": "Pontas de Pedras",
+            "latitude": -7.628671287200954,
+            "longitude": -34.8091542063302
+        },
+        {
+            "nome": "Barra de Catuama",
+            "latitude": -7.679139542169779,
+            "longitude": -34.83926118787683
+        },
+        {
+            "nome": "Catuama",
+            "latitude": -7.6541016548935135,
+            "longitude": -34.82425185068033
+        },
+        {
+            "nome": "Atapuz",
+            "latitude": -7.576394090353989,
+            "longitude": -34.83138881200402
+        },
+        {
+            "nome": "Tabatinga",
+            "latitude": -7.603968740589488,
+            "longitude": -34.81810037438654
+        },
+        {
+            "nome": "Pontal da Ilha",
+            "latitude": -7.687579424060683,
+            "longitude": -34.8482627216522
+        },
+        {
+            "nome": "Fortinho",
+            "latitude": -7.696680667229261,
+            "longitude": -34.83448689581616
+        },
+        {
+            "nome": "Pontal de Jaguaribe",
+            "latitude": -7.724972134946846,
+            "longitude": -34.82827250878413
+        },
+        {
+            "nome": "Jaguaribe",
+            "latitude": -7.7273494348531235,
+            "longitude": -34.82794760105362
+        },
+        {
+            "nome": "Quatro Cantos",
+            "latitude": -7.742961760703013,
+            "longitude": -34.82339527399301
+        },
+        {
+            "nome": "Pilar",
+            "latitude": -7.769707306848274,
+            "longitude": -34.83111714554827
+        },
+        {
+            "nome": "Rio Âmbar",
+            "latitude": -7.763831899694071,
+            "longitude": -34.83211873385603
+        },
+        {
+            "nome": "Baixa Verde",
+            "latitude": -7.761609717067797,
+            "longitude": -34.827978544400096
+        },
+        {
+            "nome": "Forno de Cal",
+            "latitude": -7.810283506068383,
+            "longitude": -34.859707072529744
+        },
+        {
+            "nome": "Forte Orange",
+            "latitude": -7.811620479702813,
+            "longitude": -34.840882203540595
+        },
+        {
+            "nome": "Enseada dos Golfinhos",
+            "latitude": -7.70974890066118,
+            "longitude": -34.83346315879553
+        },
+        {
+            "nome": "São Paulo",
+            "latitude": -7.799926094617925,
+            "longitude": -34.83777176814616
+        },
+        {
+            "nome": "Sossego",
+            "latitude": -7.724054464178881,
+            "longitude": -34.83064065348419
+        },
+        {
+            "nome": "Gavoa",
+            "latitude": -7.824350455329311,
+            "longitude": -34.84388861671131
+        },
+        {
+            "nome": "Ilhéu da Coroa do Avião",
+            "latitude": -7.8171940673537375,
+            "longitude": -34.83532579654747
+        },
+        {
+            "nome": "Mangue Seco",
+            "latitude": -7.83340160397466,
+            "longitude": -34.845132859038685
+        },
+        {
+            "nome": "Praia do Capitão",
+            "latitude": -7.819568622734065,
+            "longitude": -34.84709043692494
+        },
+        {
+            "nome": "Conceição",
+            "latitude": -7.873930872054393,
+            "longitude": -34.832481041973345
+        },
+        {
+            "nome": "Pau Amarelo",
+            "latitude": -7.921697012286874,
+            "longitude": -34.81992205229639
+        },
+        {
+            "nome": "Janga",
+            "latitude": -7.950460162295552,
+            "longitude": -34.826676932057374
+        },
+        {
+            "nome": "Maria farinha",
+            "latitude": -7.855280223906287,
+            "longitude": -34.83458419651804
+        },
+        {
+            "nome": "Rio Doce",
+            "latitude": -7.960843988236991,
+            "longitude": -34.830324922255755
+        },
+        {
+            "nome": "Casa Caiada",
+            "latitude": -7.989675553734518,
+            "longitude": -34.83846989306267
+        },
+        {
+            "nome": "Bairro Novo",
+            "latitude": -8.005022827655818,
+            "longitude": -34.84019133020001
+        },
+        {
+            "nome": "Farol",
+            "latitude": -8.011042016319816,
+            "longitude": -34.84178778601857
+        },
+        {
+            "nome": "Carmo",
+            "latitude": -8.017050091513603,
+            "longitude": -34.84723930054242
+        },
+        {
+            "nome": "Milagres",
+            "latitude": -8.021563860653398,
+            "longitude": -34.8518507804946
+        },
+        {
+            "nome": "Del Chifre",
+            "latitude": -8.02818677881339,
+            "longitude": -34.859393186018224
+        },
+        {
+            "nome": "Brasília Teimosa",
+            "latitude": -8.085720476787897,
+            "longitude": -34.87836533970342
+        },
+        {
+            "nome": "Pina",
+            "latitude": -8.094859276546325,
+            "longitude": -34.88217456082172
+        },
+        {
+            "nome": "Boa Viagem, Recife",
+            "latitude": -8.10383226892505,
+            "longitude": -34.88674799349983
+        },
+        {
+            "nome": "Piedade",
+            "latitude": -8.166308197753159,
+            "longitude": -34.913344165509024
+        },
+        {
+            "nome": "Candeias",
+            "latitude": -8.196718968707287,
+            "longitude": -34.91722226464537
+        },
+        {
+            "nome": "Barra de Jangada",
+            "latitude": -8.222022826362878,
+            "longitude": -34.92596239988897
+        },
+        {
+            "nome": "Paiva",
+            "latitude": -8.258861842514312,
+            "longitude": -34.94512764214264
+        },
+        {
+            "nome": "Itapuama",
+            "latitude": -8.292911580052033,
+            "longitude": -34.95286913417895
+        },
+        {
+            "nome": "Xeréu",
+            "latitude": -8.301243767384955,
+            "longitude": -34.94914901037931
+        },
+        {
+            "nome": "Enseada dos Corais",
+            "latitude": -8.315954811620887,
+            "longitude": -34.9480779950774
+        },
+        {
+            "nome": "Gaibu",
+            "latitude": -8.330118862163554,
+            "longitude": -34.950642547509645
+        },
+        {
+            "nome": "Calhetas",
+            "latitude": -8.344788684971066,
+            "longitude": -34.94365212066884
+        },
+        {
+            "nome": "Paraíso",
+            "latitude": -8.35691488397258,
+            "longitude": -34.949923806174425
+        },
+        {
+            "nome": "Suape",
+            "latitude": -8.357715399802364,
+            "longitude": -34.9567698905543
+        },
+        {
+            "nome": "Camboa",
+            "latitude": -8.413929746179132,
+            "longitude": -34.972004770212266
+        },
+        {
+            "nome": "Muro Alto",
+            "latitude": -8.428782436161896,
+            "longitude": -34.9781101585909
+        },
+        {
+            "nome": "Cupê",
+            "latitude": -8.457308842928438,
+            "longitude": -34.98404904385633
+        },
+        {
+            "nome": "Porto de Galinhas",
+            "latitude": -8.507831510612576,
+            "longitude": -35.00062461356055
+        },
+        {
+            "nome": "Pontal de Maracaípe",
+            "latitude": -8.53948941056524,
+            "longitude": -35.003056660052216
+        },
+        {
+            "nome": "Maracaípe",
+            "latitude": -8.525457345461167,
+            "longitude": -35.007005553146925
+        },
+        {
+            "nome": "Serrambi",
+            "latitude": -8.558976084362786,
+            "longitude": -35.01639452736255
+        },
+        {
+            "nome": "Gamela",
+            "latitude": -8.669107210113907,
+            "longitude": -35.0708498145333
+        },
+        {
+            "nome": "Guadalupe",
+            "latitude": -8.681812015605006,
+            "longitude": -35.08442174826189
+        },
+        {
+            "nome": "Barra de Sirinhaem",
+            "latitude": -8.62083573394086,
+            "longitude": -35.05617175160572
+        },
+        {
+            "nome": "Pedra",
+            "latitude": -8.678657685760287,
+            "longitude": -35.114694468145956
+        },
+        {
+            "nome": "Reduto",
+            "latitude": -8.687338899440281,
+            "longitude": -35.107314459027826
+        },
+        {
+            "nome": "Carneiros",
+            "latitude": -8.702692976269022,
+            "longitude": -35.079858578994894
+        },
+        {
+            "nome": "Campas",
+            "latitude": -8.742019628400772,
+            "longitude": -35.08586028971773
+        },
+        {
+            "nome": "Tamandaré",
+            "latitude": -8.751774463626308,
+            "longitude": -35.09128481644546
+        },
+        {
+            "nome": "Boca da Barra",
+            "latitude": -8.778419528175705,
+            "longitude": -35.10549786088078
+        },
+        {
+            "nome": "Mamucabinhas",
+            "latitude": -8.799701245419296,
+            "longitude": -35.116217059026326
+        },
+        {
+            "nome": "Porto",
+            "latitude": -8.815109085422304,
+            "longitude": -35.12498086043368
+        },
+        {
+            "nome": "Gravatá",
+            "latitude": -8.869832380605114,
+            "longitude": -35.13250807251645
+        },
+        {
+            "nome": "Várzea do Una",
+            "latitude": -8.839794017797807,
+            "longitude": -35.140114518589236
+        },
+        {
+            "nome": "Coroa Grande",
+            "latitude": -8.899094848551531,
+            "longitude": -35.14496536897506
+        }
+    ]
+}
