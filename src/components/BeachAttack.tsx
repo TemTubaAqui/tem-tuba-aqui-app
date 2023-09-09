@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/core";
 
 type Props = TouchableOpacityProps & {
   name: string;
-  attack_count: string;
+  attack_count: number;
   id_str: string;
 };
 

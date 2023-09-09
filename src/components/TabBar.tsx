@@ -13,11 +13,11 @@ export function TabBar() {
             screenOptions={({ route }) => ({
                 headerShown: false,
                 tabBarStyle: {
-                    height: 70,
+                    height: 60,
                     backgroundColor: '#9CC5FF',
                 },
                 tabBarLabelStyle:{
-                    fontSize: 17,
+                    fontSize: 9,
                     color: "#FFFFFF",
                     fontWeight: '900',
                 },
@@ -36,18 +36,6 @@ export function TabBar() {
                     }}
                 />
                 <Screen 
-                    name='Praias Proximas' 
-                    component={PraiasProximas}
-                    options={{
-                        tabBarIcon: () => {
-                            return <Image 
-                                source={require('../assets/house.png')} 
-                                alt='ícone das Praias Próximas e Seguras'
-                            />
-                        }
-                    }}
-                />
-                <Screen 
                     name='Tta' 
                     component={Tta}
                     options={{
@@ -55,6 +43,19 @@ export function TabBar() {
                             return <Image 
                                 source={require('../assets/TTA.png')} 
                                 alt='ícone da TTA'
+                            />
+                        }
+                    }}
+                />
+                <Screen 
+                    name='Praias' 
+                    component={PraiasProximas}
+                    options={{
+                        tabBarIcon: () => {
+                            return <Image 
+                                source={require('../assets/beachhouse.png')} 
+                                alt='ícone das Praias Próximas e Seguras'
+                                //style={{ width: 24, height: 24 }}
                             />
                         }
                     }}

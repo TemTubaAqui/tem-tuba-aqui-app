@@ -45,5 +45,5 @@ function haversine(lat1: number, lon1: number, lat2: number, lon2: number) {
   
     sortedPoints.sort((a, b) => a.distance - b.distance);
   
-    return sortedPoints.slice(0, 5).map((item) => item.point);
+    return sortedPoints.slice(0, 10).map((item) => item.point);
   }

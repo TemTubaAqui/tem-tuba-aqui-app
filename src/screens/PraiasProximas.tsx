@@ -8,7 +8,7 @@ import { ActivityIndicator } from "react-native";
 
 interface BeachType {
     id: number;
-    attack_count: string;
+    attack_count: number;
     name: string;
     id_str: string;
 }
@@ -26,7 +26,7 @@ export default function PraiasProximas() {
             const { latitude, longitude } = location.coords;
             const nearestBeachs = findNearestPoints(latitude, longitude, jsonParser());
 
-            const beachData = [];
+            const beachData: BeachType[] = [];
             for (const beach of nearestBeachs) {
               console.log(beach.nome);
               const response = await api.get("/beaches", {
@@ -35,10 +35,14 @@ export default function PraiasProximas() {
                 },
               });
               beachData.push(response.data.results[0]);
-              await new Promise((resolve) => setTimeout(resolve, 300)); 
+              await new Promise((resolve) => setTimeout(resolve, 100)); 
             }
-    
-            setBeachs(beachData);
+
+            beachData.sort(function(a, b) {
+              return a.attack_count - b.attack_count;
+            });
+            
+            setBeachs(beachData.slice(0, 5));
             setLoading(false)
           } else {
             console.error("Localização não disponível.");
@@ -53,13 +57,13 @@ export default function PraiasProximas() {
 
     return (
         <Box w="100%" flex={1} bg={"background"}>
-            <Text style={{marginTop: 25, color: "#00689d", fontWeight: '500', fontSize: 22, margin: 3, textAlign: 'center'}}>Essas são as praias mais próximas e seguras de você</Text>
+            <Text style={{marginTop: 25, color: "#00689d", fontWeight: '500', fontSize: 22, margin: 3, textAlign: 'center'}}>Praias próximas e seguras perto de você</Text>
             <Row>
                 <Column w={"50%"}>
-                    <Text style={{marginTop: 25, color: "#00689d", fontWeight: '500', fontSize: 18, margin: 3, textAlign: 'center'}}>Praia</Text>
+                    <Text style={{marginTop: 25, marginStart: 35, color: "#00689d", fontWeight: '500', fontSize: 18, margin: 3, textAlign: 'left'}}>Praia</Text>
                 </Column>
                 <Column w={"50%"}>
-                    <Text style={{marginTop: 25, color: "#00689d", fontWeight: '500', fontSize: 18, margin: 3, textAlign: 'center'}}>Nº de ataques</Text>
+                    <Text style={{marginTop: 25, marginEnd: 35, color: "#00689d", fontWeight: '500', fontSize: 18, margin: 3, textAlign: 'right'}}>Nº de ataques</Text>
                 </Column>
             </Row>
             <ScrollView>
