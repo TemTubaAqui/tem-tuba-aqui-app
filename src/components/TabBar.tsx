@@ -1,11 +1,10 @@
 import React from 'react'
 import { Image } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import Home from '../screens/Home';
 import Tta from '../screens/Tta';
 import Curiosidades from '../screens/Curiosidades';
+import PraiasProximas from '../screens/PraiasProximas';
 
 const {Navigator, Screen} = createBottomTabNavigator();
 export function TabBar() {
@@ -32,6 +31,18 @@ export function TabBar() {
                             return <Image 
                                 source={require('../assets/house.png')} 
                                 alt='ícone da Home'
+                            />
+                        }
+                    }}
+                />
+                <Screen 
+                    name='Praias Proximas' 
+                    component={PraiasProximas}
+                    options={{
+                        tabBarIcon: () => {
+                            return <Image 
+                                source={require('../assets/house.png')} 
+                                alt='ícone das Praias Próximas e Seguras'
                             />
                         }
                     }}
