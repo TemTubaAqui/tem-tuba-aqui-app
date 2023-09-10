@@ -6,7 +6,6 @@ import InfoPraia from '../screens/InfoPraia';
 
 const Stack = createNativeStackNavigator();
 
-
 export function AppRoutes() {
     return (
         <NavigationContainer>
