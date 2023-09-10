@@ -18,8 +18,8 @@ export default function PraiasProximas() {
     const [beachs, setBeachs] = useState<BeachType[]>([]);
 
     useEffect(() => {
-      askForLocationPermission();
       async function fetchData() {
+        await askForLocationPermission();
         try {
           const location = await getCoords();
           if (location) {
@@ -42,7 +42,7 @@ export default function PraiasProximas() {
               return a.attack_count - b.attack_count;
             });
             
-            setBeachs(beachData.slice(0, 5));
+            setBeachs(beachData.slice(0, 3));
             setLoading(false)
           } else {
             console.error("Localização não disponível.");

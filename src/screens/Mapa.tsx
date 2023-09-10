@@ -27,8 +27,6 @@ export default function PraiasProximas() {
     const [isModalVisible, setModalVisible] = useState(false);
     const toggleModal = () => setModalVisible(!isModalVisible);
 
-    askForLocationPermission();
-
     async function loadBeachDetail (name: string, lat: number, lng: number) {
         const response = await api.get("/beaches", {
             params: {
@@ -42,8 +40,8 @@ export default function PraiasProximas() {
     }
 
     useEffect(() => {
-        askForLocationPermission();
         async function setMyLocation() {
+            await askForLocationPermission();
             try {
                 const location = await getCoords();
                 if (location) {
