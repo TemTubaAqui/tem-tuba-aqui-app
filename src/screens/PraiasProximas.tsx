@@ -14,11 +14,11 @@ interface BeachType {
 }
 
 export default function PraiasProximas() {
-    askForLocationPermission();
     const [loading, setLoading] = useState(true);
     const [beachs, setBeachs] = useState<BeachType[]>([]);
 
     useEffect(() => {
+      askForLocationPermission();
       async function fetchData() {
         try {
           const location = await getCoords();
@@ -51,7 +51,6 @@ export default function PraiasProximas() {
           console.error("Erro ao buscar dados das praias:", error);
         }
       }
-    
       fetchData();
     }, []);
 

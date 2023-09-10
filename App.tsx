@@ -8,7 +8,7 @@ import { AppRoutes } from "./src/routes/app.routes";
 const theme = extendTheme({
   colors: {
     primary: "#3589FF", 
-    background: "#FFFEED", // "#FFFFFF"
+    background: "#FFFEED",
     card: "#FFFFFF"
   },
 });
